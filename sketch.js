@@ -59,7 +59,7 @@ function setup() {
  myf15= new Fire();
  myf16= new Fire();
   console.log(myf);
-  createButtton("Start").mousePressed(startmic);
+  createButton("Start").mousePressed(startmic);
 
   angleMode(DEGREES);
   frameRate(fr);
