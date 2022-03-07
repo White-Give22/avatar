@@ -34,7 +34,7 @@ let myf13;
 let myf14;
 let myf15;
 let myf16;
-let img;
+let startMic = false;
 
 function preload() {
   img = loadImage("bg.png");
@@ -59,13 +59,22 @@ function setup() {
  myf15= new Fire();
  myf16= new Fire();
   console.log(myf);
-  mic = new p5.AudioIn();
-  mic.start();
+  createButtton("Start").mousePressed(startmic);
+
   angleMode(DEGREES);
   frameRate(fr);
 }
+function startSketch(){
+  mic = new p5.AudioIn();
+  mic.start();
+
+  startMic = true;
+}
+
+
 
 function draw() {
+if (startMic){
   createCanvas(500, 500);
   background(img);
   miclevel = mic.getLevel();
@@ -89,8 +98,7 @@ function draw() {
   face();
   ewf();
   shinystar();
-
-  
+}
 }
 
 function body() {
