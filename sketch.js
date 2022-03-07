@@ -64,7 +64,7 @@ function setup() {
   angleMode(DEGREES);
   frameRate(fr);
 }
-function startSketch(){
+function startmic(){
   mic = new p5.AudioIn();
   mic.start();
 
